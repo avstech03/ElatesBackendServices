@@ -1,4 +1,4 @@
-const serviceHandler = require("../services/servicehandler").serviceHandler;
+const serviceHandler = require("../Services/servicehandler").serviceHandler;
 const BuilderService = require("../Service/BuilderService");
 const Promise = require("bluebird");
 const _ = require("lodash");

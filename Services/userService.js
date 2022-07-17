@@ -1,11 +1,11 @@
 const ModelFactory = require("../Model/ModelFactory");
-const validator = require("../services/validations");
+const validator = require("../Services/validations");
 const Promise = require("bluebird");
 const codes = require("../config/codes.json");
 const config = require("../config/serverconfig.json");
-const utils = require("../services/utils");
+const utils = require("../Services/utils");
 const request = Promise.promisify(require("request"));
-const redisUtils = require("../services/RedisClient/redisUtils");
+const redisUtils = require("../Services/RedisClient/redisUtils");
 const jwt = require("jsonwebtoken");
 const { userService } = require("./BuilderService");
 

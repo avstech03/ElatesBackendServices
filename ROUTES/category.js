@@ -1,4 +1,4 @@
-const serviceHandler = require("../services/servicehandler").serviceHandler;
+const serviceHandler = require("../Services/servicehandler").serviceHandler;
 const BuilderService = require("../Service/BuilderService");
 const Promise = require("bluebird");
 const _ = require("lodash");
@@ -9,7 +9,6 @@ const addCategory = (req, res) => {
   const serviceInst = BuilderService["categoryService"];
   let body = req.body;
   req.ApiId = "addcategory";
-  console.log("Sunny@@     HERR!!!!!!!!      ");
   return serviceHandler(req, res, serviceInst.addCategory(body));
 };
 

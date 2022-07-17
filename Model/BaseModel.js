@@ -1,6 +1,6 @@
 const Promise = require("bluebird");
-const CryptoService = require("../services/cryptoservice");
-const generateId = require("../services/generateId");
+const CryptoService = require("../Services/cryptoservice");
+const generateId = require("../Services/generateId");
 
 class BaseModel {
   constructor() {
