@@ -1,0 +1,56 @@
+{
+  "appserver": {
+    "port": [8002, 8003, 8004, 8005],
+    "privateKey": "SunnyPriyanka",
+    "domain": "http://localhost"
+  },
+  "crypto": {
+    "algorithm": "aes-256-ctr",
+    "secretKey": "lMi3uTjOfDC0812IqRRNLSWvCuWP8Vc2"
+  },
+  "mongo": {
+    "host": "mongodb://localhost",
+    "port": 27017,
+    "dbname": "elatesdb",
+    "name": "justtext"
+  },
+  "sms": {
+    "uri": "https://www.fast2sms.com/dev/bulkV2",
+    "queryparams": {
+      "language": "english",
+      "authorization": "bw8FDS30ui1kWmNpCsP5nI6UJEtlARMKL9xVegTXHZ2yoa4GOY7Nq3wEHTf5AsPRmay1YbjuIQUOLB8x",
+      "flash": 0,
+      "route": "q"
+    },
+    "method": "GET",
+    "loginMessageTemplate": "is your OTP Please use it to login to Elates Grocer, valid till 10 Minutes. Thank you"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "options": {
+      "retry_max_delay": 300000
+    }
+  },
+  "otp": {
+    "shouldExpireIn": 300
+  },
+  "api": {
+    "admin": "/elates/api/admin/:userId",
+    "user": "/elates/api/users/:userId"
+  },
+  "aws": {
+    "accessKey": "AKIA3KG4D55HYYZ6XE6T",
+    "secretKey": "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",
+    "s3": {
+      "bucketName": "elates"
+    }
+  },
+  "razorpay": {
+    "key_id": "rzp_test_zrmGCSu8iIxoBd",
+    "key_secret": "oaqVF72Fxqms7yYp3aFZjcPv",
+    "currency": "INR",
+    "payment_capture": true,
+    "secret": "SunnyPriyanka"
+  }
+}

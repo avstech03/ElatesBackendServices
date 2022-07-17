@@ -1,0 +1,13 @@
+{
+    "user": "u",
+    "category": "ca",
+    "coupon": "co",
+    "offers": "of",
+    "order": "or",
+    "product": "p",
+    "wallet": "w",
+    "homescreentemplate": "ht",
+    "cart": "ct",
+    "razorpayorder": "rpo",
+    "paymentstatus": "ps"
+}
