@@ -47,7 +47,7 @@ class CategoryService {
   deleteCategoryById(categoryId) {
     if (!categoryId)
       return Promise.reject("MISSING_REQ_FIELDS_IN_QUERY_PARAMS");
-    return this.model.deleteCategoryById(categoryId);
+    return this.model.deleteCategory(categoryId);
   }
 
   getSubCategories(categoryId) {
